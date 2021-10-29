@@ -6,7 +6,7 @@ import './ManageEvents.css'
 const ManageEvents = () => {
     const [users, setUsers] = useState([])
     useEffect(() =>{
-        fetch('http://localhost:5000/users')
+        fetch('https://salty-springs-47787.herokuapp.com/users')
         .then(res => res.json())
         .then(data => setUsers(data))
     },[])

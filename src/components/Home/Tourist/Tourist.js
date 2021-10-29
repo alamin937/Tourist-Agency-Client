@@ -9,7 +9,7 @@ const Tourist = () => {
     const [tourists, setTourist] = useState([])
     const {loading} = UseAuth()
     useEffect(() =>{
-        fetch('http://localhost:5000/tourist')
+        fetch('https://salty-springs-47787.herokuapp.com/tourist')
         .then(res => res.json())
         .then(data => setTourist(data))
     },[])
