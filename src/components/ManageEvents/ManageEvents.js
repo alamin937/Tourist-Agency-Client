@@ -16,7 +16,7 @@ const ManageEvents = () => {
     const handleDelete = id =>{
                const procced = window.confirm('Are You Sure. You Want To Delete?')
                if(procced){
-                const url = (`http://localhost:5000/users/${id}`)
+                const url = (`https://salty-springs-47787.herokuapp.com/users/${id}`)
                 fetch(url, {
                     method: "DELETE"
                 })

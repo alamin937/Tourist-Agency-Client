@@ -18,7 +18,7 @@ const PlaceOrder = () => {
     };
     return (
         <div className='addevent'>
-            <h1 className='mt-2'>User Information</h1>
+            <h1 className='text-white' style={{display:'inline-block', marginTop:'40px'}}>User Information</h1>
              <form onSubmit={handleSubmit(onSubmit)}>
       <input defaultValue={user.displayName} {...register("firstName")} />
       <input defaultValue={user.email} {...register("email")} />

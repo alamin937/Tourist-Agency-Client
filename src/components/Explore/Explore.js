@@ -3,11 +3,11 @@ import { Card, Col, Row } from 'react-bootstrap';
 
 const Explore = () => {
     return (
-        <div style={{width:'90%', margin:'0 auto', marginTop:'50px'}}>
+        <div  data-aos="flip-right" style={{width:'90%', margin:'0 auto', marginTop:'50px'}}>
             <h1 className='text-danger' style={{marginBottom:'20px'}}>Explore The World</h1>
             <hr />
             <Row xs={1} md={2} lg={3} className="g-4">
-    <Col>
+    <Col data-aos="flip-left">
       <Card>
         <Card.Img variant="top" src="https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" />
         <Card.Body>
@@ -18,7 +18,7 @@ const Explore = () => {
         </Card.Body>
       </Card>
     </Col>
-    <Col>
+    <Col data-aos="flip-up">
       <Card>
         <Card.Img variant="top" src="https://images.unsplash.com/photo-1465778893808-9b3d1b443be4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=875&q=80" />
         <Card.Body>

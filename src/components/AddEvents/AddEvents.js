@@ -18,7 +18,7 @@ const AddEvents = () => {
     return (
         <div className='addevent'>
            <div className='event'>
-            <h1>Add Event</h1>
+            <h1 className='text-white'  style={{display:'inline-block', marginTop:'40px'}}>Add Event</h1>
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <input placeholder='Event Name' {...register("name")} />
                   <input placeholder='Image' {...register("img")} />
