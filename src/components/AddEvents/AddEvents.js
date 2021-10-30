@@ -17,14 +17,16 @@ const AddEvents = () => {
     };
     return (
         <div className='addevent'>
+           <div className='event'>
             <h1>Add Event</h1>
-             <form onSubmit={handleSubmit(onSubmit)}>
+                <form onSubmit={handleSubmit(onSubmit)}>
                   <input placeholder='Event Name' {...register("name")} />
                   <input placeholder='Image' {...register("img")} />
                   <input placeholder='Rate' {...register("rate")} />
                   <textarea placeholder='Description' {...register("description")} />
                   <input type="submit" />
              </form>
+           </div>
         </div>
     );
 };

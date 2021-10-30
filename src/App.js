@@ -25,9 +25,9 @@ function App() {
         <Route path='/home'>
           <Home></Home>
         </Route>
-        <Route path='/myevents'>
+        <PrivateRoute path='/myevents'>
           <MyEvents></MyEvents>
-        </Route>
+        </PrivateRoute>
         <Route path='/manageevents'>
           <ManageEvents></ManageEvents>
         </Route>
