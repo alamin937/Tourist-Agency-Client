@@ -10,9 +10,9 @@ const ShowTourist = (props) => {
       <Card>
         <Card.Img variant="top" src={img} />
         <Card.Body>
-          <Card.Title>{name}</Card.Title>
+          <Card.Title> <h1 className='text-danger'>{name}</h1> </Card.Title>
           <Card.Text>
-            <h3>{rate}</h3>
+            <h3>Cost: ${rate}</h3>
             <p style={{textAlign:'justify'}}>{description.slice(0,200)}</p>
           </Card.Text>
         </Card.Body>
